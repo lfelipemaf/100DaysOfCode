@@ -1,6 +1,4 @@
 import random
-
-
 rock = '''
     _______
 ---'   ____)
@@ -27,8 +25,6 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-
-#Write your code below this line 👇
 choices = [rock,paper,scissors]
 player = input("Chose a number: 0 rock 🪨 , 1 paper 📄  and 2 scissors ✂️: \n")
 cpu = random.randint(0,2)
