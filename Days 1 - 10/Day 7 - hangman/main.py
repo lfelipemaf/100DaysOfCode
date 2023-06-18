@@ -1,20 +1,29 @@
-import random
-#Step 1
+import words
+def ask():
+    letter = str(input("Guess a word: ")).lower()
+    return letter
+def complete_word(letter_chosen,word_guess):
+    letter = letter_chosen
+    for l in chosen_word:
+        if letter == l:
+            word_guess.append(l)
+        else:
+            word_guess.append("_")
+    word_guessed = ''.join(word_guess)
+    return word_guessed
 
-word_list = ["aardvark", "baboon", "camel"]
 
-#TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
-word = random.choice(word_list)
-hint = len(word)*"-"
+chosen_word = words.chosen_word
+print(len(chosen_word) * "-")
 word_guess = []
-print(hint)
-#TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
-letter = input("Guess a word: ")
-#TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
-for l in word:
-    if letter.lower() == l:
-        word_guess.append(l)
-    else:
-        word_guess.append("_")
-word_guess = ''.join(word_guess)
-print(word_guess)
+letter = ask()
+
+guessed = complete_word(letter, word_guess)
+print(guessed)
+count = 0
+for i in guessed:
+    if i == '_':
+        count = count + 1
+word_guess = guessed
+
+
