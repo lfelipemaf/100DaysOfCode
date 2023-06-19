@@ -1,29 +1,36 @@
 import words
-def ask():
-    letter = str(input("Guess a word: ")).lower()
-    return letter
-def complete_word(letter_chosen,word_guess):
-    letter = letter_chosen
-    for l in chosen_word:
-        if letter == l:
-            word_guess.append(l)
-        else:
-            word_guess.append("_")
-    word_guessed = ''.join(word_guess)
-    return word_guessed
 
-
+end_of_game = False
 chosen_word = words.chosen_word
-print(len(chosen_word) * "-")
-word_guess = []
-letter = ask()
-
-guessed = complete_word(letter, word_guess)
-print(guessed)
-count = 0
-for i in guessed:
-    if i == '_':
-        count = count + 1
-word_guess = guessed
-
-
+print("\n")
+print("""#     #    #    #     #  #####  #     #    #    #     # 
+#     #   # #   ##    # #     # ##   ##   # #   ##    # 
+#     #  #   #  # #   # #       # # # #  #   #  # #   # 
+####### #     # #  #  # #  #### #  #  # #     # #  #  # 
+#     # ####### #   # # #     # #     # ####### #   # # 
+#     # #     # #    ## #     # #     # #     # #    ## 
+#     # #     # #     #  #####  #     # #     # #     #""")
+print(f"\n The word to guess is:\n\n  {len(chosen_word) * '-'}")
+word_length = len(chosen_word)
+lives = 6
+display = []
+for _ in range(word_length):
+    display += "_"
+print(words.stages[lives])
+while not end_of_game:
+    guess = input("\nGuess a letter: ").lower()
+    if chosen_word.count(guess) == 0:
+        lives -= 1
+    for position in range(word_length):
+        letter = chosen_word[position]
+        # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
+        if letter == guess:
+            display[position] = letter
+    print(words.stages[lives])
+    print(f"{' '.join(display)}")
+    if "_" not in display and lives > 0:
+        end_of_game = True
+        print("You win.")
+    elif "_" in display and lives == 0:
+        end_of_game = True
+        print("You lose.")
