@@ -23,4 +23,4 @@ for i in bidders:
     if int(bidders[i]) >= int(highest_bid):
         highest_bid = bidders[i]
         highest_bidder = i
-print(f"\nThe winner is {highest_bidder} with the bid of ${highest_bid}")
+print(f"\nThe winner is {highest_bidder} with the bid of ${highest_bid}\n")
