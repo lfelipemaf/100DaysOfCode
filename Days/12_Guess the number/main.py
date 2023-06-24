@@ -10,9 +10,9 @@ def compare(guess, answer):
     elif guess > answer and guess-answer > 5:
         return print(f"Too high")
     elif guess > answer and guess-answer <= 5:
-        return print(f"You are just a little bit high, but realy close")
+        return print(f"You are just a little bit high, but really close")
     elif guess < answer and answer-guess <= 5:
-        return print(f"You are just a little bit low, but realy close")
+        return print(f"You are just a little bit low, but really close")
     else:
         return print(f"Too low")
 
