@@ -11,7 +11,7 @@ def choose_data(options):
     description = d['description']
     country = d['country']
     follower_count = int(d['follower_count'])
-    return name, description, country,follower_count,i
+    return name, description, country, follower_count, i
 def start_game():
     options = []
     for i in range(0, len(data)):
