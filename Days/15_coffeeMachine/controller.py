@@ -14,6 +14,7 @@ def check_resources(water, milk, coffee):
 
 
 def process_coins(drink):
+    print(f"\nOk, the {drink.title()} is ${MENU[drink]['cost']}")
     penny = float(input("\nHow Many pennies?")) * 0.01
     nickels = float(input("How Many nickels?")) * 0.05
     dimes = float(input("How Many dimes?")) * 0.10

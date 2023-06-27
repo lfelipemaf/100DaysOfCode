@@ -2,7 +2,7 @@ import controller
 
 operation = False
 while not operation:
-    action = input("Hello, what would you like?\nEspresso\nLatte\nCappuccino\n").lower()
+    action = input("\nHello, what would you like? (Espresso, Latte, Cappuccino): ").lower()
 
     if action == 'report':
         controller.report()
