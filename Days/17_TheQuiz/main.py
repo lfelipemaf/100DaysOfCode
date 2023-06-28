@@ -7,7 +7,7 @@ import os
 os.system("cls || clear")
 question_bank = []
 for i in question_data:
-    n_question = Question(i['text'], i['answer'])
+    n_question = Question(i['question'], i['correct_answer'])
     question_bank.append(n_question)
 
 end_game = False
