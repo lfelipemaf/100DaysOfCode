@@ -4,12 +4,10 @@ tim = Turtle()
 screen = Screen()
 
 
-def move_forward():
-    """Move the turtle forward 10 paces"""
-    tim.forward(10)
+def f():
+    tim.fd(50)
+    tim.lt(60)
 
-
-move_forward()
+screen.onkey(f, "space")
 screen.listen()
-screen.onkey(key="space", fun=move_forward())
 screen.exitonclick()
