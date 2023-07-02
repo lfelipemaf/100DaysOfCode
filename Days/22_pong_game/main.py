@@ -3,13 +3,13 @@ from paddle import Paddle
 import time
 
 screen = Screen()
-screen.setup(width=800,height=600)
+screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Pong")
 screen.tracer(0)
 
-r_paddle = Paddle((350,0))
-l_paddle = Paddle((-350,0))
+r_paddle = Paddle((350, 0))
+l_paddle = Paddle((-350, 0))
 
 screen.onkey(r_paddle.move_up, "Up")
 screen.onkey(r_paddle.move_down, "Down")
@@ -22,11 +22,14 @@ while is_game_on:
     screen.update()
     time.sleep(0.1)
 
+# create the ball and make it move
 
-#create another paddle
-#create the ball and make it move
-#detecet collision with wall and bounce
-#detect collition with paddle
-#detect when paddle misses
-#keep score
+# detect collision with wall and bounce
+
+# detect coalition with paddle
+
+# detect when paddle misses
+
+# keep score
+
 screen.exitonclick()
