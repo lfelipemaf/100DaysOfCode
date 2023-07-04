@@ -30,10 +30,10 @@ while game_is_on:
             scoreboard.game_over()
             game_is_on = False
 
-    if turtle.ycor() > 280:
-        turtle.restart()
-        car_manager.increase_speed()
-        scoreboard.scores()
+        if turtle.is_at_finish_line():
+            turtle.go_to_start()
+            car_manager.increase_speed()
+            scoreboard.scores()
 
 
 screen.exitonclick()
