@@ -1,1 +1,7 @@
-['Dear [name],\n', '\n', 'You are invited to my birthday this Saturday.\n', '\n', 'Hope you can make it!\n', '\n', 'Angela\n']
+Dear Toph,
+
+You are invited to my birthday this Saturday.
+
+Hope you can make it!
+
+Angela

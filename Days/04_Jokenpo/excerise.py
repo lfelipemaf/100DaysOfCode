@@ -27,13 +27,13 @@ import my_module
 # # Import the random module here
 # import random
 # # Split string method
-# names_string = input("Give me everybody's names, separated by a comma. ")
-# names = names_string.split(", ")
+# names_string = input("Give me everybody's names_file, separated by a comma. ")
+# names_file = names_string.split(", ")
 # # 🚨 Don't change the code above 👆
 #
 # #Write your code below this line 👇
-# n = random.randint(0, len(names) - 1)
-# print(f"{names[n]} is going to buy the meal today!")
+# n = random.randint(0, len(names_file) - 1)
+# print(f"{names_file[n]} is going to buy the meal today!")
 #
 #
 # fruits = ["Strawberries","Nectarines","Apples","Grapes","Peaches","Cherries","Pears"]

@@ -13,11 +13,11 @@ for _ in range(word_length):
 print(images.stages[lives])
 guesses = []
 while not end_of_game:
-    guess = input("\nGuess a letter: ").lower()
+    guess = input("\nGuess a letter_file: ").lower()
     if chosen_word.count(guess) == 0:
         lives -= 1
     if guess in guesses:
-        print(f"\nAttention! you already guessed the letter {guess}")
+        print(f"\nAttention! you already guessed the letter_file {guess}")
     for position in range(word_length):
         letter = chosen_word[position]
 

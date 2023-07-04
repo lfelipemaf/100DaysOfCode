@@ -11,7 +11,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 password_list = []
 #Eazy Level - Order not randomised:
-#e.g. 4 letter, 2 symbol, 2 number = JduE&!91
+#e.g. 4 letter_file, 2 symbol, 2 number = JduE&!91
 for l in range(1,nr_letters+1):
     letter = random.choice(letters)
     password_list.append(letter)
@@ -24,7 +24,7 @@ for s in range(1,nr_symbols+1):
 password = ''.join(password_list)
 print(f"Easy password: {password}")
 #Hard Level - Order of characters randomised:
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+#e.g. 4 letter_file, 2 symbol, 2 number = g^2jk8&P
 password_list = []
 for l in range(1,nr_letters+1):
     letter = random.choice(letters)
