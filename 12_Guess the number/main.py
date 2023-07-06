@@ -30,7 +30,7 @@ number = random.randint(1,100)
 print(f"Testing the code {number}")
 
 for i in range(life):
-    print(f"\n{art.heart*life}")
+    print(f"\n{art.heart * life}")
     ask = int(input(f"\nTell me a number between 1 to 100:"))
     compare(guess=ask,answer=number)
     if ask == number:
