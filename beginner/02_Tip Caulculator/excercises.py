@@ -1,6 +1,6 @@
 # # 🚨 Don't change the code below 👇
-# height = input("enter your height in m: ")
-# weight = input("enter your weight in kg: ")
+# height = entry("enter your height in m: ")
+# weight = entry("enter your weight in kg: ")
 # # 🚨 Don't change the code above 👆
 #
 # #Write your code below this line 👇
@@ -9,7 +9,7 @@
 
 
 # # 🚨 Don't change the code below 👇
-# age = input("What is your current age? ")
+# age = entry("What is your current age? ")
 # # 🚨 Don't change the code above 👆
 #
 # #Write your code below this line 👇

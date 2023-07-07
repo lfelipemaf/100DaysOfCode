@@ -27,7 +27,7 @@ import my_module
 # # Import the random module here
 # import random
 # # Split string method
-# names_string = input("Give me everybody's names_file, separated by a comma. ")
+# names_string = entry("Give me everybody's names_file, separated by a comma. ")
 # names_file = names_string.split(", ")
 # # 🚨 Don't change the code above 👆
 #

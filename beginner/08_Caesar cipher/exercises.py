@@ -2,9 +2,9 @@
 #     print(f"\nHello {name},\nYou are {age} years old and live in {city}.")
 #
 #
-# name = input("What's your name?\n")
-# age = input("How old are you?\n")
-# city = input("Where do you live?\n")
+# name = entry("What's your name?\n")
+# age = entry("How old are you?\n")
+# city = entry("Where do you live?\n")
 #
 #
 # greet(city=city,age=age,name=name)
@@ -15,8 +15,8 @@
 #     n_of_cans=((height*width)/cover)
 #     print(f"You'll need {int(math.ceil(n_of_cans))} cans of paint.")
 #
-# test_h = int(input("Height of wall: "))
-# test_w = int(input("Width of wall: "))
+# test_h = int(entry("Height of wall: "))
+# test_w = int(entry("Width of wall: "))
 # coverage = 5
 # paint_calc(height=test_h, width=test_w, cover=coverage)
 
@@ -38,7 +38,7 @@
 # # Write your code above this line 👆
 #
 # # Do NOT change any of the code below👇
-# n = int(input("Check this number: "))
+# n = int(entry("Check this number: "))
 # prime_checker(number=n)
 
 fruits = ['apple', 'banana', 'cherry']

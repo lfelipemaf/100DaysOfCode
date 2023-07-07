@@ -35,7 +35,7 @@ print(format_name(input("What is your first name?\n"),input("What is your last n
 
   
 # #🚨 Do NOT change any of the code below 
-# year = int(input("Enter a year: "))
-# month = int(input("Enter a month: "))
+# year = int(entry("Enter a year: "))
+# month = int(entry("Enter a month: "))
 # days = days_in_month(year, month)
 # print(days)

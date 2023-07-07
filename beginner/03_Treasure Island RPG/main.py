@@ -1,7 +1,7 @@
 # print("welcome to the roller coaster!")
 #
-# height = int(input("What is your height in cm?"))
-# age = int(input("How old are you? "))
+# height = int(entry("What is your height in cm?"))
+# age = int(entry("How old are you? "))
 # bill = 0
 # if height >= 120:
 #     print("You can ride the roller coaster!")
@@ -23,7 +23,7 @@
 # # Exercise 1 - Odd or Even
 #
 # # 🚨 Don't change the code below 👇
-# number = int(input("Which number do you want to check? "))
+# number = int(entry("Which number do you want to check? "))
 # # 🚨 Don't change the code above 👆
 #
 # #Write your code below this line 👇
@@ -35,8 +35,8 @@
 
 #  # Exercise 2 - BMI 2.0
 # # 🚨 Don't change the code below 👇
-# weight = float(input("enter your weight in kg: "))
-# height = float(input("enter your height in m: "))
+# weight = float(entry("enter your weight in kg: "))
+# height = float(entry("enter your height in m: "))
 #
 # # 🚨 Don't change the code above 👆
 #
@@ -56,7 +56,7 @@
 #  # exercise 3 - leap year
 #
 # # 🚨 Don't change the code below 👇
-# year = int(input("Which year do you want to check? "))
+# year = int(entry("Which year do you want to check? "))
 # # 🚨 Don't change the code above 👆
 #
 # #Write your code below this line 👇
@@ -70,9 +70,9 @@
 # exercise 4 - Pizza Order Practice
 # # 🚨 Don't change the code below 👇
 # print("Welcome to Python Pizza Deliveries!")
-# size = input("What size pizza do you want? S, M, or L ")
-# add_pepperoni = input("Do you want pepperoni? Y or N ")
-# extra_cheese = input("Do you want extra cheese? Y or N ")
+# size = entry("What size pizza do you want? S, M, or L ")
+# add_pepperoni = entry("Do you want pepperoni? Y or N ")
+# extra_cheese = entry("Do you want extra cheese? Y or N ")
 # # 🚨 Don't change the code above 👆
 #
 # #Write your code below this line 👇
