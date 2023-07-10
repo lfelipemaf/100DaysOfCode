@@ -55,3 +55,8 @@
 #
 #
 # print(total_likes)
+
+# ----------------------------------- JSON ----------------------------------- #
+# write -> json.dump()
+# read -> json.load()
+# update -> json.update()
