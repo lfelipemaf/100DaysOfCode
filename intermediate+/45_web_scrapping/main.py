@@ -14,7 +14,10 @@ article_texts = []
 articles = soup.find_all(name="h3", class_="title")
 for article_tag in articles:
     text = article_tag.getText()
-    article_texts.append(text)
+    article_texts.insert(0,text)
 
-print(article_texts)
+with open("movie_list.txt", "w") as file:
+    for movie in article_texts:
+        file.write(movie)
+        file.write("\n")
 
