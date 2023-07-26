@@ -28,7 +28,7 @@ delta = (diff/ dby) * 100
 if abs(delta) > 0:
     response = requests.get(url=f"https://newsapi.org/v2/everything?q={COMPANY_NAME}&apiKey={news_api_key}", verify=False)
     response.raise_for_status()
-    news_data = response.json()["articles"]
+    news_data = response.json()["all_movies"]
 
     three_articles = news_data[:3]
 
