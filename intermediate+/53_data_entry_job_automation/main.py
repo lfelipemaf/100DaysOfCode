@@ -26,14 +26,13 @@ for link in all_link_elements:
         all_links.append(href)
 all_address_elements = soup.select("ul li div div a address")
 all_addresses = [address.get_text().split(" | ")[-1] for address in all_address_elements]
-all_price_elements = soup.select("PropertyCardWrapper__StyledPriceLine-srp__sc-16e8gqd-1 iMKTKr")
+all_price_elements = soup.select('div > div.StyledPropertyCardDataWrapper-c11n-8-84-3__sc-1omp4c3-0.bKpguY.property-card-data > div.StyledPropertyCardDataArea-c11n-8-84-3__sc-yipmu-0.fDSTNn > div > span')
+print(all_price_elements)
 all_prices = []
 for price in all_price_elements:
     a = price.getText()
     print(a)
-
-print(all_price_elements)
-
+    all_prices.append(a)
 
 
 print(all_addresses)
